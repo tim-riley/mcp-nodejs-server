@@ -1,23 +1,14 @@
 {
-
   "name": "@gentoro/mcp-nodejs-server",
-
   "version": "0.0.2",
-
   "type": "module",
-
   "bin": {
-
     "mcp-nodejs-server": "dist/index.js"
-
   },
-
   "files": [
     "dist"
   ],
-
   "scripts": {
-
     "start:dev": "npx nodemon",
     "start": "npm run build && node dist/index.js",
     "build": "rm -rf ./dist && tsc",
@@ -25,46 +16,33 @@
     "copy-static-files": "cp ./README.md ./dist",
     "npmjs-publish": "npm run build && npm run copy-static-files && npm publish --access=public"
   },
-
-  "keywords": [],
-
+  "keywords": [
+    "Gentoro",
+    "MCP",
+    "Model Context Protocol"
+  ],
   "author": "Gentoro R&D",
-
   "homepage": "https://gentoro.com",
-
-  "license": "ISC",
-
-  "description": "",
-
-  "dependencies": {
-
-    "@modelcontextprotocol/sdk": "1.0.1",
-
-    "axios": "^1.7.9",
-
-    "zod": "^3.23.8"
-
+  "bugs": "https://github.com/gentoro-gh/mcp-nodejs-server/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gentoro-gh/mcp-nodejs-server"
   },
-
+  "license": "Apache-2.0",
+  "description": "Integration layer between Model Context Protocol and Gentoro's MCP Server implementation",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.1",
+    "axios": "^1.7.9",
+    "zod": "^3.23.8"
+  },
   "devDependencies": {
-
     "@eslint/js": "^9.16.0",
-
     "@jest/globals": "^29.7.0",
-
     "@types/jest": "^29.5.14",
-
     "@types/node": "^22.10.1",
-
     "nodemon": "^3.1.7",
-
     "ts-node": "^10.9.2",
-
     "typescript": "^5.7.2",
-
     "typescript-eslint": "^8.17.0"
-
   }
-
 }
-
