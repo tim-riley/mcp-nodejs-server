@@ -2,7 +2,7 @@
 
   "name": "@gentoro/mcp-nodejs-server",
 
-  "version": "0.0.1",
+  "version": "0.0.2",
 
   "type": "module",
 
@@ -13,21 +13,17 @@
   },
 
   "files": [
-
-    "build"
-
+    "dist"
   ],
 
   "scripts": {
 
     "start:dev": "npx nodemon",
-
     "start": "npm run build && node dist/index.js",
-
     "build": "rm -rf ./dist && tsc",
-
-    "test": "jest"
-
+    "test": "jest",
+    "copy-static-files": "cp ./README.md ./dist",
+    "npmjs-publish": "npm run build && npm run copy-static-files && npm publish --access=public"
   },
 
   "keywords": [],
