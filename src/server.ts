@@ -24,9 +24,9 @@ export class GentoroServer {
     private _server: Server | null = null;
     constructor() {
         this._config = {
-            apiKey: process.env.GENTORO_API_KEY || '11ff1da12709c0f9e8c95c77de1f15707840b0a9b5e8967f9262ce3973c835e0',
-            bridgeUid: process.env.GENTORO_BRIDGE_UID || '553upxFZXx2GhCTTZAj55q',
-            baseUrl: process.env.GENTORO_BASE_URL || 'https://stage.gentoro.com/api'
+            apiKey: process.env.GENTORO_API_KEY || null,
+            bridgeUid: process.env.GENTORO_BRIDGE_UID || null,
+            baseUrl: process.env.GENTORO_BASE_URL || null
         }
         this._transport = new HttpTransport(this._config);
     }
