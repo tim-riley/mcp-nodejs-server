@@ -1,6 +1,6 @@
 {
   "name": "@gentoro/mcp-nodejs-server",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "type": "module",
   "bin": {
     "mcp-nodejs-server": "dist/index.js"
@@ -23,10 +23,10 @@
   ],
   "author": "Gentoro R&D",
   "homepage": "https://gentoro.com",
-  "bugs": "https://github.com/gentoro-gh/mcp-nodejs-server/issues",
+  "bugs": "https://github.com/gentoro-GT/mcp-nodejs-server/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gentoro-gh/mcp-nodejs-server"
+    "url": "https://github.com/gentoro-GT/mcp-nodejs-server"
   },
   "license": "Apache-2.0",
   "description": "Integration layer between Model Context Protocol and Gentoro's MCP Server implementation",
