@@ -10,13 +10,13 @@ As this MCP server is fully integrated with Gentoro, the agents, tools and their
 
 ## Setup
 
-1. Create a Gentoro account
+1. Create a Gentoro account. 
 Visit the [Gentoro](https://gentoro.com) website to request an account and start using Gentoro services.
 
-2. Create a Gentoro API Key
+2. Create a Gentoro API Key. 
 Once you have an account, create an API key to authenticate with the Gentoro services.
 
-3. Define a Bridge
+3. Define a Bridge. 
 Using Gentoro Studio, define your bridge with all the tools and data sources required.
 
 ### Integrate Gentoro with Claude
